@@ -12,4 +12,9 @@ cask "mdview" do
 
   app "mdview.app"
   binary "#{appdir}/mdview.app/Contents/MacOS/mdview"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/mdview.app"]
+  end
 end
