@@ -2,8 +2,8 @@ cask "mdview" do
   arch arm: "aarch64", intel: "x64"
 
   version "0.1.0"
-  sha256 arm: "af067c37542b5feaa4cdd0c59146695baa0d534b2b02aef9d5775426932e6705",
-         intel: "0ddd3653c0ecbbe02b4f7488966a9e12f9423c3f4e23f7b0570a4ed5b0104c2f"
+  sha256 arm: "113bf3d7671286c04f2afb2f23203af8d4dc25d77d30c069479c6d9412bf24c7",
+         intel: "8c6ef94007bd7d765d8f508444d775898258df460c8756b109e5ecca78c08141"
 
   url "https://github.com/HonotaKobo/mdview/releases/download/v#{version}/mdview_#{version}_#{arch}.dmg"
   name "mdview"
