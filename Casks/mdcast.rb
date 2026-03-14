@@ -1,9 +1,9 @@
 cask "mdcast" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.1.6"
-  sha256 arm: "042be1809ed60a76ce0de6026cc51576cf1fa291a3ac3e8dcff5c08fc69f26b5",
-         intel: "274ac489d3d064aa6610664d25a7219dc6c720d2760a83fbe468bf2da8c1c92d"
+  version "0.2.0"
+  sha256 arm: "041f22d079537b32299c52c8a2a65b311199ef1eeeec7737253b268c2ccdf5a7",
+         intel: "7f607a78cc7ebd52f8519be87e9741ccf826d21b760ff8742fd9f41bef6a8187"
 
   url "https://github.com/HonotaKobo/mdcast/releases/download/v#{version}/mdcast_#{version}_#{arch}.dmg"
   name "mdcast"
