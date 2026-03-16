@@ -1,20 +1,20 @@
-cask "mdcast" do
+cask "tsumugi" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.2.20"
-  sha256 arm: "3ca0b716887718aa87731a83e9867998a095e1a347166d0c2ee8a0d41f9f9a5d",
-         intel: "6050a60e12cde6fb2e8ca49d6285294ed15a0dca3155f615e000f4770258686e"
+  version "0.3.0"
+  sha256 arm: "22f662f8e7eb03e1ef614835c8b44b5f7e107d6754d0ab317f372f5a77b0d539",
+         intel: "ab5054a5aef79987deb5b9b5438099be214514554fc66cf3e2493d26e4d5baa7"
 
-  url "https://github.com/HonotaKobo/mdcast/releases/download/v#{version}/mdcast_#{version}_#{arch}.dmg"
-  name "mdcast"
+  url "https://github.com/HonotaKobo/tsumugi/releases/download/v#{version}/tsumugi_#{version}_#{arch}.dmg"
+  name "tsumugi"
   desc "Markdown viewer for the AI age"
-  homepage "https://github.com/HonotaKobo/mdcast"
+  homepage "https://github.com/HonotaKobo/tsumugi"
 
-  app "mdcast.app"
-  binary "#{appdir}/mdcast.app/Contents/MacOS/mdcast"
+  app "tsumugi.app"
+  binary "#{appdir}/tsumugi.app/Contents/MacOS/tsumugi"
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/mdcast.app"]
+                   args: ["-cr", "#{appdir}/tsumugi.app"]
   end
 end
