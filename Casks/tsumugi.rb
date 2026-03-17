@@ -1,11 +1,11 @@
 cask "tsumugi" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.3.12"
-  sha256 arm: "91938e150542d10139ada88a937b62293f437024db4fd0488ac407af5f1cf8b4",
-         intel: "7e4d632e9a6f42e2707a4569570c5378b286b655ad3c2decc8830875388822d1"
+  version "0.3.16"
+  sha256 arm: "328854e5eb6533aefd81d64d5099ce4d02550e499b49ea677503abdd99682104",
+         intel: "7c7d84ff2d81bfdae9813bbda5367bb49e7663751670d0596e29c02e9712c322"
 
-  url "https://github.com/HonotaKobo/tsumugi/releases/download/v#{version}/tsumugi_#{version}_#{arch}.app.tar.gz"
+  url "https://github.com/HonotaKobo/tsumugi/releases/download/v#{version}/tsumugi_#{version}_#{arch}.dmg"
   name "tsumugi"
   desc "Markdown viewer for the AI age"
   homepage "https://github.com/HonotaKobo/tsumugi"
