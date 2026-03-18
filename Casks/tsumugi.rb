@@ -1,9 +1,9 @@
 cask "tsumugi" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.3.32"
-  sha256 arm: "9f0378111fb22e8d54eac1498f5edd41707ef8c255805e1c056a7884d1205ca4",
-         intel: "441e67fdd6a45ed1aaa2274ab5c6a6ee5f7b5b8d1b744ad58b2760d59b36b334"
+  version "0.3.33"
+  sha256 arm: "132889a00c7d6ad4d966d73d2ab7f4787032e96e3a753a1bb12a900309d9af8f",
+         intel: "32a1fb18414e80214c0505f365ad0b4f9e035a591167afe36ec28c8f69541721"
 
   url "https://github.com/HonotaKobo/tsumugi/releases/download/v#{version}/tsumugi_#{arch}.app.tar.gz"
   name "tsumugi"
